@@ -11,10 +11,10 @@
 # Eclipse: start new JServlet project
 - File -> New -> Project
   - Web -> Dynamic Web Project
-
+>
 *Note*:
 - you need to include a variant of 'servlet-api-tomcat-8.5.33.jar' in your classpath
-
+>
 # Eclipse: export to War file
 TODO: improve this, there must be a better way
 - Select your project lefthand in project explorer
