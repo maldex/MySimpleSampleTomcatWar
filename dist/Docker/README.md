@@ -24,19 +24,24 @@ git clone git@github.com:maldex/MySimpleSampleTomcatWar.git
 cd MySimpleSampleTomcatWar/
 
 # uncompress libraries
-unzip lib/libs.zip -d lib/
-rm -f lib/__*.jar
+unzip dist/lib/libs.zip -d dist/lib/
 ```
 
 ## prepare for docker build
 ```
 cd dist/Docker
 
-# copy libs and configs to here
+# copy config and libs to here (Docker builder directory)
+cp -v ../*.xml ./
 cp -Rv ../lib ./
-cp -Rv ../*.xml ./
+
+# cleanup libs
+rm -fv lib/__*.jar lib/*.zip
 
 # download/aquire the actual .war file
 mkdir webapps
 wget -O webapps/MySimpleSampleTomcat.war https://github.com/maldex/MySimpleSampleTomcatWar/releases/download/pre-3/MySimpleSampleTomcat.war
 ```
+
+## proceed 
+Follow up the _XX - Something.md_ markdown files in this directory.
