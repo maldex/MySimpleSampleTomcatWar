@@ -27,14 +27,14 @@ docker inspect tomcat:8.5.33-jre8 | less
 docker run --rm -it   -e DBUSER=blablablabla    my_sample_tommy sh -c 'set | grep ^DB'
 ```
 
-### run
+### full run
 ```bash
 docker run --rm -it -p 8080:8080 -e DBHOST=`hostname -f` -e DBPASS=PassW0rd.1 my_sample_tommy
 ```
 
-### rim custom tomcat image
+### full run using links
 ```bash
-docker run --rm -it -p 8080:8080 --link jdbc-test-server:mysql \
-    -e DBHOST=$MYSQL_PORT_3306_TCP_ADDR -e DBPASS=PassW0rd.1 \
-    jdbc_test
+docker run --rm -it -p 8080:8080 --link my-tommy-test-db:MYDB \
+    -e DBHOST=$MYSQL_PORT_3306_TCP_ADDR -e DBPASS=$MYDB_ENV_MYSQL_ROOT_PASSWORD \
+    my_sample_tommy
 ```

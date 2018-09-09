@@ -27,7 +27,7 @@ cd MySimpleSampleTomcatWar/
 unzip dist/lib/libs.zip -d dist/lib/
 ```
 
-## prepare for docker build
+## prepare for docker
 ```
 cd dist/Docker
 
