@@ -9,6 +9,11 @@ Please inspect the [Dockerfile] yourself, there is some magic around the jdbc co
 
 ### build
 ```bash
+# optional: explode war file. this increases startup-time and places our app at url / 
+unzip webapps/MySimpleSampleTomcat.war -d webapps/
+rm -f webapps/MySimpleSampleTomcat.war
+
+# instruct docker to go through the Dockerfile, creating an :latest image
 docker build -t my_sample_tommy .
 ```
 
