@@ -8,6 +8,7 @@ docker run --rm --name my-tommy-test-db -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=P
 *NOTE*
 - the _--name__ flag names this instance. You won't be able to start another container with this name. check ```docker ps```
 - the _-p 3306:3306_ makes it publicly (outside docker networks) accessible. This is not necessarely required.
+- there is no persistency this way. attach a volume to keep your data after terminating this container.
 >
 
 ### apply our sql 
