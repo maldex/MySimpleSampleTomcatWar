@@ -1,4 +1,5 @@
 lib/
 *.xml
 *.jar
+*.war
 webapps/

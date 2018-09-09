@@ -1,5 +1,5 @@
 
-assuming you've followed the [README.md], you should be inside your repo in _dist/Docker_ with the filnal .war file at hand.
+assuming you've followed the [README.md](README.md), you should be inside your repo in _dist/Docker_ with the final application inside _webapps/_
 
 ## just simply run the application
 ```bash

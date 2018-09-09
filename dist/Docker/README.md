@@ -1,7 +1,7 @@
 This directory contains stuff required for running or building a docker container with your custom war file. 
 
 ## run the sample from apache.org
-Docker [installation](README.docker-install.md) (>=v17) is assumed to be already done.
+[Docker installation](README.docker-install.md) (>=v17) is assumed to be already done.
 ```bash
 # download
 wget -O sample.war https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war
@@ -17,7 +17,7 @@ docker run -it --rm -p 8080:8080 -v ${PWD}/sample.war:/usr/local/tomcat/webapps/
 - adding _/bin/bash_ the the docker-command above will take you into a shell, not starting tomcat.
 > 
 
-## get started
+## get started with this project
 ```bash
 # clone this project
 git clone git@github.com:maldex/MySimpleSampleTomcatWar.git
