@@ -1,3 +1,5 @@
-build/
+.idea/
 .settings/
+.project
+build/
 dist/lib/*.jar

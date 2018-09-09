@@ -1,10 +1,7 @@
-This directory contains stuff required for running or building a docker container with your custom war file.
+This directory contains stuff required for running or building a docker container with your custom war file. 
 
-
-# Tomcat .WAR deployment PoC - get your app into a container  
-
-### pre-test
-run the simple sample from apache.org
+### run the sample from apache.org
+Docker installation (>=v17) is assumed to be already done.
 ```bash
 # download
 wget -O sample.war https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war
@@ -14,7 +11,7 @@ docker run -it --rm -p 8080:8080 -v ${PWD}/sample.war:/usr/local/tomcat/webapps/
 ```
 >
 *NOTE*
-- access _http://<ip>:8080/_
+- access _http://<ip>:8080/_ and _http://<ip>:8080/sample_ 
 - tomcat starts in a quite virgin state, manager is active but not granted, etc.
 - inspect the _-v_ switch and compare to your experience with the _webapp/_ directory.
 - adding _/bin/bash_ the the docker-command above will take you into a shell, not starting tomcat.
