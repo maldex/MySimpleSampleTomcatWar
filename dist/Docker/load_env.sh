@@ -1,4 +1,6 @@
 #! /bin/bash
+# assemble CATALINA parameters for inherition and expansion to xml configuration files based on env variables
+
 if [ ! -z "${MYDB_PORT_3306_TCP_ADDR}" ]; then DBHOST="${MYDB_PORT_3306_TCP_ADDR}:${MYDB_PORT_3306_TCP_PORT}"; fi
 if [ ! -z "${MYDB_ENV_MYSQL_ROOT_PASSWORD}" ]; then DBPASS="${MYDB_ENV_MYSQL_ROOT_PASSWORD}"; fi
 

@@ -1,6 +1,6 @@
 This directory contains stuff required for running or building a docker container with your custom war file. 
 
-## run the sample from apache.org
+### run the sample from apache.org
 [Docker installation](README.docker-install.md) (>=v17) is assumed to be already done.
 ```bash
 # download
@@ -17,7 +17,7 @@ docker run -it --rm -p 8080:8080 -v ${PWD}/sample.war:/usr/local/tomcat/webapps/
 - adding _/bin/bash_ the the docker-command above will take you into a shell, not starting tomcat.
 > 
 
-## get started with this project
+### get started with this project
 ```bash
 # clone this project
 git clone git@github.com:maldex/MySimpleSampleTomcatWar.git
@@ -27,7 +27,7 @@ cd MySimpleSampleTomcatWar/
 unzip dist/lib/libs.zip -d dist/lib/
 ```
 
-## prepare for docker
+### prepare for docker
 ```
 cd dist/Docker
 
@@ -43,5 +43,5 @@ mkdir webapps
 wget -O webapps/MySimpleSampleTomcat.war https://github.com/maldex/MySimpleSampleTomcatWar/releases/download/pre-3/MySimpleSampleTomcat.war
 ```
 
-## proceed 
-Follow up the _XX - Something.md_ markdown files in this directory.
+### proceed 
+Follow up the [XX - Something.md](see_this_directory) markdown files in this directory.

@@ -1,7 +1,7 @@
 
 assuming you've followed the [README.md](README.md), you should be inside your clone in _dist/Docker_ with the final application inside _webapps/_
 
-## just simply run the application
+### just simply run the application
 ```bash
 docker run -it --rm -p 8080:8080 \
         -v ${PWD}/webapps:/usr/local/tomcat/webapps/ \
@@ -14,7 +14,7 @@ docker run -it --rm -p 8080:8080 \
 - very nasty side-effect: tomcat will unzip the war file, leaving you with a nasty root-owned directory in webapps/
 >
 
-## let's add configuration files
+### let's add configuration files
 ```bash
 docker run -it --rm -p 8080:8080 \
            -v ${PWD}/webapps:/usr/local/tomcat/webapps/ \
@@ -27,7 +27,7 @@ docker run -it --rm -p 8080:8080 \
 - JDBC will fail with an *missing* _jdbc-driver-class_
 >
 
-## let's add the driver
+### let's add the driver
 ```bash
 docker run -it --rm -p 8080:8080 \
            -v ${PWD}/webapps:/usr/local/tomcat/webapps/ \
@@ -42,7 +42,7 @@ docker run -it --rm -p 8080:8080 \
 - inspect the _xml-configurations_, it expects jvm-parameters like _-Ddb.host=x.x.x.x_ to be set.
 >
 
-## full run
+### full run
 ```bash
 docker run -it --rm -p 8080:8080 \
            -v ${PWD}/webapps:/usr/local/tomcat/webapps/ \
