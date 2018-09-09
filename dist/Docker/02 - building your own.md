@@ -32,3 +32,9 @@ docker run --rm -it   -e DBUSER=blablablabla    my_sample_tommy sh -c 'set | gre
 docker run --rm -it -p 8080:8080 -e DBHOST=`hostname -f` -e DBPASS=PassW0rd.1 my_sample_tommy
 ```
 
+### rim custom tomcat image
+```bash
+docker run --rm -it -p 8080:8080 --link jdbc-test-server:mysql \
+    -e DBHOST=$MYSQL_PORT_3306_TCP_ADDR -e DBPASS=PassW0rd.1 \
+    jdbc_test
+```
