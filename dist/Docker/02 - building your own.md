@@ -22,13 +22,8 @@ docker inspect tomcat:8.5.33-jre8 | less
 docker run --rm -it   -e DBUSER=blablablabla    my_sample_tommy sh -c 'set | grep ^DB'
 ```
 
-# run and see default env-values
-docker run --rm -it -p 8080:8080 MySimpleSampleTomcat sh -c 'set | grep ^DB'
-```
-
-### run custom image
-assuming the db server is on the same host:3306, access via hostname
+### run
 ```bash
-docker run --rm -it -p 8080:8080 -e DBHOST=`hostname` -e DBPASS=PassW0rd.1 MySimpleSampleTomcat
+docker run --rm -it -p 8080:8080 -e DBHOST=`hostname -f` -e DBPASS=PassW0rd.1 my_sample_tommy
 ```
 
