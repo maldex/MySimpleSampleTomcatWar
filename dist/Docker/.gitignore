@@ -1,1 +1,4 @@
 lib/
+*.xml
+*.jar
+webapps/

@@ -17,14 +17,26 @@ docker run -it --rm -p 8080:8080 -v ${PWD}/sample.war:/usr/local/tomcat/webapps/
 - adding _/bin/bash_ the the docker-command above will take you into a shell, not starting tomcat.
 > 
 
-## get started with this project
+## get started
 ```bash
+# clone this project
 git clone git@github.com:maldex/MySimpleSampleTomcatWar.git
 cd MySimpleSampleTomcatWar/
+
+# uncompress libraries
 unzip lib/libs.zip -d lib/
 rm -f lib/__*.jar
+```
 
-# download a release as well
-mkdir build
-wget -O build/MySimpleSampleTomcat.war https://github.com/maldex/MySimpleSampleTomcatWar/releases/download/pre-3/MySimpleSampleTomcat.war
+## prepare for docker build
+```
+cd dist/Docker
+
+# copy libs and configs to here
+cp -Rv ../lib ./
+cp -Rv ../*.xml ./
+
+# download/aquire the actual .war file
+mkdir webapps
+wget -O webapps/MySimpleSampleTomcat.war https://github.com/maldex/MySimpleSampleTomcatWar/releases/download/pre-3/MySimpleSampleTomcat.war
 ```
