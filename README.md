@@ -6,10 +6,15 @@ This project aims a slight bit further than apache's [sample application](https:
 - A display of environment variables that are actually inherited to the JVM and eventually to the application.
 - A set of commands to be run against the the host. 
 - A demonstration/checker for JDBC datasources.
+- A sample how to create a [Docker](dist/Docker) image of your application embedded.
 
 # get started in ecliplse
-- File -> Import -> git -> Projects from git -> clone project
-- unzip the dist/lib/libs.zip, this contains JDBC drivers.
+- go to your favorite git-clone place, clone this repo
+- unzip the contents of _dist/lib/libs.zip_ (JDBC drivers and variant of Servlet-API.jar)
+- open eclipse, ensure you have the [Java Web Devel](README.eclipse.md) stuff installed.
+- Create new Project, _Web_ -> _Dynamic Web Project_
+- untick _Use default location_, specify the clone directory here.
+- tick _Generate web.xml deployment descriptor_
 - Select Project -> right-click properties
 - Java Build Path ->  Libraries -> add your variant of your _servlet-api.jar_ for your tomcat.
 
