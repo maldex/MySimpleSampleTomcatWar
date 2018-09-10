@@ -9,7 +9,7 @@ This project aims a slight bit further than apache's [sample application](https:
 - A [deployable .war-file](https://github.com/maldex/MySimpleSampleTomcatWar/releases), the same deployment format as found in various enterprise release pipelines.
 - A display of environment variables that are actually inherited to the JVM and eventually to the application.
 - A set of linux shell commands to be run against the the host.
-- A demonstration/checker for JDBC datasources. ([server.xml](dist/server.xml)/[context.xml](dist/context.xml) via [environment variables](dist/Docker/load_env.sh) from [java-code](src/SomeDebug.java))
+- A demonstration/checker for JDBC datasources. ([server.xml](dist/server.xml)/[context.xml](dist/context.xml) via [environment variables](dist/Docker/load_env.sh) from [java-code](src/SimpleJdbcTest.java))
 
 ## get started in eclipse
 - go to your favorite git-clone place, clone this repo
