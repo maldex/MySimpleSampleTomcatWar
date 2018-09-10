@@ -22,4 +22,6 @@ This project aims a slight bit further than apache's [sample application](https:
 - Java Build Path ->  Libraries -> add your variant of your _servlet-api.jar_ for your tomcat (see servlet-api.jar in  _.classpath_)
 
 # get started inside tomcat
+Checkout the [releases](releases) for public available url.
+
 TODO: document how to install into a classic tomcat. Manager-ui? example documentation?
