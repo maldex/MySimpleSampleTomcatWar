@@ -5,13 +5,13 @@ Stupid example JServlet application that comes as .war file, and tells me someth
 This project aims a slight bit further than apache's [sample application](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/). But its basically just a PoC and debug thing, and documentation for myself.
 
 ## features
-- [A sample how to create a custom docker image with tomcat and application embedded](dist/Docker/README.mds)
-- A deployable .war-file, the same deployment format as found in various enterprise release pipelines.
+- [A sample how to create a custom docker image with tomcat and application embedded](dist/Docker/README.md)
+- A [deployable .war-file](https://github.com/maldex/MySimpleSampleTomcatWar/releases), the same deployment format as found in various enterprise release pipelines.
 - A display of environment variables that are actually inherited to the JVM and eventually to the application.
-- A set of commands to be run against the the host. 
-- A demonstration/checker for JDBC datasources.
+- A set of linux shell commands to be run against the the host.
+- A demonstration/checker for JDBC datasources. ([server.xml](dist/server.xml)/[context.xml](dist/context.xml) via [environment variables](dist/Docker/load_env.sh) from [java-code](src/SomeDebug.java))
 
-# get started in eclipse
+## get started in eclipse
 - go to your favorite git-clone place, clone this repo
 - unzip the contents of _dist/lib/libs.zip_ (JDBC drivers and variant of Servlet-API.jar)
 - open eclipse, ensure you have the [Java Web Devel](README.eclipse.md) stuff installed.
@@ -21,7 +21,5 @@ This project aims a slight bit further than apache's [sample application](https:
 - Select Project -> right-click properties
 - Java Build Path ->  Libraries -> add your variant of your _servlet-api.jar_ for your tomcat (see servlet-api.jar in  _.classpath_)
 
-# get started inside tomcat
-See [releases] for a public available url of the war file.
-
+## get started inside tomcat
 TODO: document how to install into a classic tomcat. Manager-ui? example documentation?
