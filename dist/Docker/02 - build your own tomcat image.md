@@ -1,7 +1,7 @@
 # Deploy an application building a custom i,age
 assuming you've followed the [README.md](README.md), you should be inside your clone in _dist/Docker_ with the final application inside _webapps/_.
 
-### about the Dockerfile
+### about this Dockerfile
 simply:
 - use the official tomcat container as starting position.
 - cleanup and remove unwanted stuff
