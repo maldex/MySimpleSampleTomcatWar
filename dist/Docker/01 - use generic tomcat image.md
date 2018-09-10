@@ -1,5 +1,5 @@
-
-assuming you've followed the [README.md](README.md), you should be inside your clone in _dist/Docker_ with the final application inside _webapps/_
+# Deploy an application using the generic tomcat image
+assuming you've followed the [README.md](README.md), you should be inside your clone in _dist/Docker_ with the final application inside _webapps/_.
 
 ### just simply run the application
 ```bash

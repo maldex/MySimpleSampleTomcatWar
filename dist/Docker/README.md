@@ -1,3 +1,5 @@
+# PoC for a WAR deployment into a container
+
 This directory contains stuff required for running or building a docker container with your custom war file. 
 
 ### run the sample from apache.org
@@ -31,7 +33,7 @@ unzip dist/lib/libs.zip -d dist/lib/
 ```
 cd dist/Docker
 
-# copy config and libs to here (Docker builder directory)
+# copy config and libs to here (our work- / build-directory)
 cp -v ../*.xml ./
 cp -Rv ../lib ./
 
