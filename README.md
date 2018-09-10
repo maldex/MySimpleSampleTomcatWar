@@ -23,3 +23,6 @@ This project aims a slight bit further than apache's [sample application](https:
 
 ## get started inside tomcat
 TODO: document how to install into a classic tomcat. Manager-ui? example documentation?
+
+## lil' tip
+Segregate the Java and Docker world when naming things. In the Java world, [CamelCasing](https://en.wikipedia.org/wiki/Camel_case) seems great, but the Docker world only handles [snake_casing](https://en.wikipedia.org/wiki/Snake_case). Be advised:wq!
