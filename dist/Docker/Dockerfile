@@ -22,9 +22,10 @@ COPY        webapps/        /usr/local/tomcat/webapps/
 COPY        load_env.sh     /
 
 # patch catalina.sh to include our env
-RUN         sed -i '2i### custom env loader' bin/catalina.sh
-RUN         sed -i '3isource /load_env.sh' bin/catalina.sh
-RUN         sed -i '4i###' bin/catalina.sh
+RUN         cp -v bin/catalina.sh bin/catalina.sh.org
+RUN         sed -i '2i### custom env loader'   bin/catalina.sh
+RUN         sed -i '3isource /load_env.sh'     bin/catalina.sh
+RUN         sed -i '4i###'                     bin/catalina.sh
 
 # include this very file into the image (self-documentation)
 COPY        Dockerfile      /
