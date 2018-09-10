@@ -19,7 +19,7 @@ This project aims a slight bit further than apache's [sample application](https:
 - untick _Use default location_, specify the clone directory here.
 - tick _Generate web.xml deployment descriptor_
 - Select Project -> right-click properties
-- Java Build Path ->  Libraries -> add your variant of your _servlet-api.jar_ for your tomcat (see servlet-api.jar in  _.classpath_)
+- Java Build Path ->  Libraries -> add your variant of your _servlet-api.jar_ for your tomcat (see servlet-api.jar in [.classpath](.classpath)
 
 ## get started inside tomcat
 TODO: document how to install into a classic tomcat. Manager-ui? example documentation?
