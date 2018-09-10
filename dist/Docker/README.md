@@ -46,5 +46,4 @@ wget -O webapps/MySimpleSampleTomcat.war https://github.com/maldex/MySimpleSampl
 ```
 
 ### proceed 
-Follow up the [XX - Something.md](../) markdown files in this directory.
-Follow up the [XX - Something.md](../) markdown files in this directory.
+Follow up the [XX - Something.md](./) markdown files in this directory.
