@@ -16,7 +16,7 @@ docker run -it --rm -p 8080:8080 -v ${PWD}/sample.war:/usr/local/tomcat/webapps/
 - access _http://ip:8080/_ and _http://ip:8080/sample_ 
 - tomcat starts in a quite virgin state, manager is active but not granted, etc.
 - inspect the _-v_ switch and compare to your experience with the _webapp/_ directory.
-- adding _/bin/bash_ the the docker-command above will take you into a shell, not starting tomcat.
+- adding _/bin/bash_ the the docker-run-command above will take you into a shell, not starting tomcat.
 > 
 
 ### get started with this project
@@ -46,4 +46,5 @@ wget -O webapps/MySimpleSampleTomcat.war https://github.com/maldex/MySimpleSampl
 ```
 
 ### proceed 
-Follow up the [XX - Something.md](ls_-lah_./*.md) markdown files in this directory.
+Follow up the [XX - Something.md](../) markdown files in this directory.
+Follow up the [XX - Something.md](../) markdown files in this directory.
