@@ -2,7 +2,7 @@
 ### start a mariadb instance as sql-server
 ```bash
 # start a server container daemon
-docker run --rm --name my-tommy-test-db -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=PassW0rd.1 mariadb
+docker run --rm --name my-tommy-test-db -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD=somePassWord mariadb
 ```
 > 
 *NOTE*
