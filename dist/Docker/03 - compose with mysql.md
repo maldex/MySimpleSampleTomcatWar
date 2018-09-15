@@ -41,4 +41,3 @@ docker-compose down --volumes
 *NOTE*
 - access via _http://<IP>:8080/MySimpleSampleTomcat/_ or just _http://<IP>:8080/_ depends on your _webapps/_ directoy upon build.
 >
-
