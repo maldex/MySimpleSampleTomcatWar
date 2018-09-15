@@ -1,4 +1,4 @@
-DROP DATABASE DbTest;
+DROP DATABASE IF EXISTS DbTest;
 CREATE DATABASE DbTest;
 USE DbTest;
 CREATE TABLE `TblTest` (
@@ -10,5 +10,3 @@ CREATE TABLE `TblTest` (
 INSERT INTO `TblTest` VALUES (1,'hans','isst ne wurst'),(2,'fritz','liebt fisch'),(3,'peter','\'\''),(4,'that guy','\'\'');
 
 SELECT * FROM `TblTest`;
-
-EXIT;
