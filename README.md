@@ -1,7 +1,7 @@
 # My Simple Sample Tomcat War Project
 Stupid example JServlet application that comes as [deployable .war-file](https://github.com/maldex/MySimpleSampleTomcatWar/releases) file, and tells me something about it's runtime and lets me test a JDBC connection. Just as much as my humble java and html allowed. Improvements heartly welcomed.
 
-This project aims a slight bit further than apache's [sample application](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/), serving as PoC and [debug help](screenshots/README.md).
+This project aims a slight bit further than apache's [sample application](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/), serving as PoC and [debug help](screenshots/).
 
 ## features
 - [A sample how to create a custom docker image with tomcat and application embedded](dist/Docker/README.md)
