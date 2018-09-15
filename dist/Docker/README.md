@@ -3,9 +3,9 @@
 This directory contains stuff required for running or building a docker container with your custom war file. 
 
 ### run the sample from apache.org
-[Docker installation](README.docker-install.md) (>=v17) is assumed to be already done.
+Simple Engine test: use apache's sample.war. [Docker installation](README.docker-install.md) (>=v17) is assumed to be already done.
 ```bash
-# download
+# download .war file
 wget -O sample.war https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war
 
 # map this .war via volumes into the container
@@ -42,7 +42,7 @@ rm -fv lib/__*.jar lib/*.zip
 
 # download/aquire the actual .war file
 mkdir webapps
-wget -O webapps/MySimpleSampleTomcat.war https://github.com/maldex/MySimpleSampleTomcatWar/releases/download/pre-3/MySimpleSampleTomcat.war
+wget -O webapps/MySimpleSampleTomcat.war https://github.com/maldex/MySimpleSampleTomcatWar/releases/download/helloWorld/MySimpleSampleTomcat.war
 ```
 
 ### proceed 
