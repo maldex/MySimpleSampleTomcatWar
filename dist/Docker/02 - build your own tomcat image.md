@@ -1,4 +1,4 @@
-# Deploy an application building a custom i,age
+# Deploy an application building a custom image
 assuming you've followed the [README.md](README.md), you should be inside your clone in _dist/Docker_ with the final application inside _webapps/_.
 
 ### about this Dockerfile
