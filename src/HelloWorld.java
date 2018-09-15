@@ -13,9 +13,7 @@ public class HelloWorld extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter out = response.getWriter();
 		response.setContentType("text/html");
-		out.print("<html><body><h1>hello</h1>");
-		out.print("<h3>Hello World</h3>");
-		out.print("how are you feeling today?");
+		out.print("<html><body><h1><a href=https://www.youtube.com/watch?v=AwSra5p8MDw>GOOD MORNING VIETNAM!!!</a></h1>");
 		out.print("</body></html>");
 	}
 }
