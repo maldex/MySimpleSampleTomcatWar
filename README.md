@@ -1,6 +1,6 @@
 # My Simple Sample Tomcat War Project
 
-Stupid example JServlet application that comes as .war file, and tells me something about it's runtime and lets me test a JDBC connection. Just as much as my humble java and html allowed. Improvements heartly welcomed.
+Stupid example JServlet application that comes as [.war](releases) file, and tells me something about it's runtime and lets me test a JDBC connection. Just as much as my humble java and html allowed. Improvements heartly welcomed.
 
 This project aims a slight bit further than apache's [sample application](https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/). But its basically just a PoC and debug thing, and documentation for myself.
 
