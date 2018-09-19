@@ -99,7 +99,5 @@ public class SomeDebug extends HttpServlet {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
-
 }
