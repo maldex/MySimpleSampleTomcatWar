@@ -15,5 +15,5 @@ if [ ! -z "${DBNAME}" ]; then CATALINA_OPTS="${CATALINA_OPTS} -Ddb.name=${DBNAME
 if [ ! -z "${DBUSER}" ]; then CATALINA_OPTS="${CATALINA_OPTS} -Ddb.user=${DBUSER}"; fi
 if [ ! -z "${DBPASS}" ]; then CATALINA_OPTS="${CATALINA_OPTS} -Ddb.pass=${DBPASS}"; fi
 
-unset DBPASS
+unset DBPASS MYDB_ENV_MYSQL_ROOT_PASSWORD
 export CATALINA_OPTS DBHOST DBNAME DBUSER
