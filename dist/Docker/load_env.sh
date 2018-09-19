@@ -11,8 +11,9 @@ if [ -z "${DBHOST}" ]; then
     fi
 
 CATALINA_OPTS="${CATALINA_OPTS} -Ddb.host=${DBHOST}"
-if [ ! -z "${DBUSER}" ]; then CATALINA_OPTS="${CATALINA_OPTS} -Ddb.user=${DBUSER}"; fi
 if [ ! -z "${DBNAME}" ]; then CATALINA_OPTS="${CATALINA_OPTS} -Ddb.name=${DBNAME}"; fi
+if [ ! -z "${DBUSER}" ]; then CATALINA_OPTS="${CATALINA_OPTS} -Ddb.user=${DBUSER}"; fi
 if [ ! -z "${DBPASS}" ]; then CATALINA_OPTS="${CATALINA_OPTS} -Ddb.pass=${DBPASS}"; fi
 
+unset DBPASS
 export CATALINA_OPTS DBHOST DBNAME DBUSER
